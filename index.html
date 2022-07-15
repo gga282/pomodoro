@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">TBA</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">TBA</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">TBA</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <hr>
+    <div class="container d-block">
+        <div class="row mt-2 pt-2">
+            <div class="col-4">
+            </div>
+            <div class="col-4">
+                <div class="clock-main bg-danger bg-gradient">
+                    <div class="allButton position-relative m-2 text-center ">
+                        <button type="button" id="setUpButton" onclick="setUpTimer()" class="btn btn-outline-secondary btn-sm">Setup Timer</button>
+                        <button type="button" class="btn btn-outline-secondary btn-sm">Secondary</button>
+                        <button type="button" class="btn btn-outline-secondary btn-sm">Secondary</button>
+                    </div>
+                    <div id="clock-middle" class="mt-4 text-center">
+                        <h2>25:00</h2>
+                    </div>
+                    <div class="clock-bottom mt-4 text-center">
+                      <button type="button" id="bTimer" onclick="startTimer()" class="btn btn-outline-secondary">Start</button>
+                    </div>
+                </div>
+                <hr>
+                <div class="text-center">
+                  <p id="text-Transparency">#1</p><br>
+                  <p class="pb-3 text-muted">Time to focus!</p>
+                </div>
+            
+                <h4 class="text-muted float-start">Tasks</h4>
+                <div class="dropdown-center float-end">
+                  <button class="btn" id="dropdownMenuButton1"><i class="bi bi-three-dots-vertical"></i></button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownCenterBtn">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Action two</a></li>
+                      <li><a class="dropdown-item" href="#">Action three</a></li>
+                    </ul>
+                </div>
+                <br>
+                <hr>
+                <div class="taskClass col text-center">
+                  <form id="addTodo">
+                    <input type="text" class="form-control inputFonk" id="inputText1" style="display:none">
+                    <button type="button" id="buttonText" onclick="inputText()" class="btn btn-lg btn-outline-secondary buttonInput">Input</button>
+                    </input>
+                  </form>
+                  <div>
+                    <div class="card p-3" style="width: 18rem;">
+                      <div class="card-body">
+                        <ul id="todoDone" class="list-group list-group-flush listSetUp">
+            
+                        </ul>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <br>
+                
+              
+            </div>
+
+            <div class="col-4">
+            </div>
+        </div>
+    </div>
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>
