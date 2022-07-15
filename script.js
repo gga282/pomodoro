@@ -5,7 +5,7 @@
 //const startButton=document.querySelector('#bTimer');
 //const addText=document.querySelector('#buttonText');
 //const form=document.querySelector('#addTodo');
-
+var myTimer;
 var min='25';
 var seconds='00';
 var startTimerCount=0;
@@ -52,7 +52,7 @@ function startTimer(){
     if (startTimerCount==1){
     var timer=document.getElementById('clock-middle');
     var count=0;
-    var myTimer=setInterval(countDown,1000);    
+    setInterval(countDown,1000);    
     }
     else{
         stopTimer(myTimer);
@@ -72,7 +72,7 @@ function countDown(){
     document.getElementById('clock-middle').innerHTML="<h2>"+min+":"+seconds+"</h2>";
 }
     else if(min<0){
-        stopTimer();
+        resetTimer();
     }
     else{
         if(seconds<10){
@@ -83,9 +83,13 @@ function countDown(){
     }
 
 }
-function stopTimer(){
+function resetTimer(){
     clearInterval(myTimer);
     min=0;
     seconds=0;
     document.getElementById('clock-middle').innerHTML="<h2>"+min+":"+seconds+"</h2>";
+}
+function stopTimer(myTimer){
+    
+    clearInterval(myTimer);
 }
